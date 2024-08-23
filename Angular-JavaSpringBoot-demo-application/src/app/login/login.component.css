@@ -1,0 +1,164 @@
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Parent Styling */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .01)), url('https://i.postimg.cc/d130GQv8/img.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container Styling */
+.container {
+    width: 350px;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    background: #ffffff; /* Solid white background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lighter shadow for a subtle effect */
+    border-radius: 10px;
+    border: 1px solid #dddddd; /* Light border color */
+    padding: 20px;
+}
+
+/* Login Form Section */
+.login {
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: -20px;
+    font-size: 30px;
+    color: #333333; /* Darker text color for contrast */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="password"] {
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #cccccc; /* Light border color for input fields */
+    background: #f9f9f9; /* Light background for input fields */
+    font-size: 15px;
+    border-radius: 10px;
+    color: #333333; /* Darker text color */
+}
+
+input::placeholder {
+    color: #999999; /* Lighter placeholder color */
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight border color on focus */
+}
+
+/* Error Message Styling */
+.error {
+    color: #ff4d4d;
+    font-size: 0.875em;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/* Options Section */
+.options {
+  display: flex; /* Ensure it's displayed as flex container */
+  align-items: center; /* Align items vertically in the center */
+  margin-top: 15px; /* Space above the section */
+  font-size: 13px; /* Font size for the text */
+  color: #333333; /* Text color */
+}
+
+.options input[type="checkbox"] {
+  margin-top: 0; /* Remove additional margin */
+  margin-right: 10px; /* Space between checkbox and label */
+  
+}
+
+.options label {
+  margin-right: 20px; /* Space between label and link */
+  font-size: 0.875em; /* Font size for labels */
+  color: #333333; /* Darker color for labels */
+}
+
+.options a {
+  color: #007bff; /* Blue color for the link */
+  text-decoration: none; /* No underline by default */
+}
+
+.options a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+/* Button Styling */
+button {
+    background: linear-gradient(#007bff, #0056b3); /* Blue gradient for button */
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.3s, color 0.3s, outline 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(#0056b3, #007bff);
+    outline: 1px solid #0056b3;
+}
+
+/* Register Link Styling */
+p {
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+p a {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #007bff; /* Blue color for register link */
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.ui-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}

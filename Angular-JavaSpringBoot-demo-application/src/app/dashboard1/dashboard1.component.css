@@ -1,0 +1,15 @@
+/* Center the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text within the container */
+  }
+  
+  /* Style the h1 element */
+  h1 {
+    font-family: 'Poppins', sans-serif; /* Replace with your preferred font */
+    color: #4CAF50; /* Replace with your desired color */
+    font-size: 3rem; /* Adjust font size as needed */
+  }

@@ -1,0 +1,401 @@
+/* .register-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.875em;
+  }
+  
+  .login-link {
+    margin-top: 15px;
+  }
+  
+  .login-link p {
+    text-align: center;
+  }
+  
+  .login-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+ */
+
+
+ /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .01)), url('https://i.postimg.cc/d130GQv8/img.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 20px; 
+}
+
+
+.register-container {
+    width: 100%;
+    max-width: 400px; 
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 15px; 
+    text-align: center;
+}
+
+
+.register-container h2 {
+    font-size: 1.75em; 
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-group-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.form-group {
+    flex: 1;
+    min-width: 48%;
+    margin-bottom: 15px;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    border: 1px solid #ffffff;
+    font-size: 0.875em; 
+    border-radius: 8px; 
+    color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ffffff;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+
+.error {
+    color: #ff4d4d;
+    font-size: 0.75em; 
+    text-align: left;
+    margin-top: 4px; 
+}
+
+
+button {
+    width: 100%;
+    background: linear-gradient(#ffffff, #000000);
+    color: #000000;
+    padding: 8px; 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px; 
+    font-weight: 600;
+    font-size: 0.875em; 
+    transition: background 0.3s, color 0.3s, outline 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(#000000, #ffffff);
+    color: #000000;
+    outline: 1px solid #ffffff;
+}
+
+
+.login-link p {
+    font-size: 0.75em; 
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.login-link a {
+    font-size: 1em; 
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    .form-group-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        min-width: 100%;
+    }
+
+    button {
+        font-size: 0.75em; 
+    }
+
+    .register-container h2 {
+        font-size: 1.5em; 
+    }
+} */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Parent Styling */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .01)), url('https://i.postimg.cc/d130GQv8/img.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 20px; /* Ensures there's space around the container on small screens */
+}
+
+/* Container Styling */
+.register-container {
+    width: 100%;
+    max-width: 400px; /* Adjusted maximum width for better fit */
+    position: relative;
+    z-index: 1;
+    background: #ffffff; /* Solid white background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lighter shadow for a subtle effect */
+    border-radius: 10px;
+    border: 1px solid #dddddd; /* Light border color */
+    padding: 15px; /* Adjusted padding */
+    text-align: center;
+}
+
+/* Header Styling */
+.register-container h2 {
+    font-size: 1.75em; /* Reduced font size for header */
+    color: #333333; /* Darker text color for contrast */
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Row Styling */
+.form-group-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Form Group Styling */
+.form-group {
+    flex: 1;
+    min-width: 48%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* Ensures label and input are stacked */
+}
+
+/* Input Fields Styling */
+.form-group label {
+    display: block;
+    margin-bottom: 4px; /* Reduced margin between label and input */
+    font-size: 0.875em; /* Font size for labels */
+    color: #333333; /* Darker color for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    border: 1px solid #cccccc; /* Light border color */
+    background: #f9f9f9; /* Light background for input fields */
+    font-size: 0.875em; /* Reduced font size */
+    border-radius: 8px; /* Slightly smaller border-radius */
+    color: #333333; /* Darker text color */
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999999; /* Lighter placeholder color */
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight border color on focus */
+}
+
+/* Error Message Styling */
+.error {
+    color: #ff4d4d;
+    font-size: 0.75em; /* Reduced font size */
+    text-align: left;
+    margin-top: 4px; /* Reduced margin */
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    background: linear-gradient(#007bff, #0056b3); /* Blue gradient for button */
+    color: #ffffff;
+    padding: 8px; /* Reduced padding */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px; /* Reduced margin */
+    font-weight: 600;
+    font-size: 0.875em; /* Reduced font size */
+    transition: background 0.3s, color 0.3s, outline 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(#0056b3, #007bff);
+    outline: 1px solid #0056b3;
+}
+
+/* Register Link Styling */
+.login-link p {
+    font-size: 0.75em; /* Reduced font size */
+    margin-top: 20px; /* Reduced margin */
+    text-align: center;
+}
+
+.login-link a {
+    font-size: 1em; /* Reduced font size */
+    font-weight: 600;
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .form-group-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        min-width: 100%;
+    }
+
+    button {
+        font-size: 0.75em; /* Smaller button text */
+    }
+
+    .register-container h2 {
+        font-size: 1.5em; /* Smaller header text */
+    }
+}

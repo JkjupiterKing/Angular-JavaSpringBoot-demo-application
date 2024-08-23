@@ -1,0 +1,208 @@
+  <!-- <div class="parent">
+  <div class="register-container">
+    <h2>Register</h2>
+    <form (ngSubmit)="onRegister(registerForm)" #registerForm="ngForm">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" ngModel required #firstName="ngModel">
+        <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)" class="error">
+          First name is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" ngModel required #lastName="ngModel">
+        <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)" class="error">
+          Last name is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" ngModel required #email="ngModel">
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">
+          Email is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" ngModel required #password="ngModel">
+        <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error">
+          Password is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" ngModel required #confirmPassword="ngModel">
+        <div *ngIf="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)" class="error">
+          Confirm Password is required.
+        </div>
+        <div *ngIf="password.value !== confirmPassword.value && (confirmPassword.dirty || confirmPassword.touched)" class="error">
+          Passwords must match.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" ngModel required #department="ngModel">
+        <div *ngIf="department.invalid && (department.dirty || department.touched)" class="error">
+          Department is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" ngModel required #position="ngModel">
+        <div *ngIf="position.invalid && (position.dirty || position.touched)" class="error">
+          Position is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="hireDate">Hire Date:</label>
+        <input type="date" id="hireDate" name="hireDate" ngModel required #hireDate="ngModel">
+        <div *ngIf="hireDate.invalid && (hireDate.dirty || hireDate.touched)" class="error">
+          Hire Date is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="birthDate">Birth Date:</label>
+        <input type="date" id="birthDate" name="birthDate" ngModel required #birthDate="ngModel">
+        <div *ngIf="birthDate.invalid && (birthDate.dirty || birthDate.touched)" class="error">
+          Birth Date is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" ngModel required #address="ngModel"></textarea>
+        <div *ngIf="address.invalid && (address.dirty || address.touched)" class="error">
+          Address is required.
+        </div>
+      </div>
+  
+      <button type="submit" [disabled]="registerForm.invalid">Register</button>
+    </form>
+  
+    <div class="login-link">
+      <p>Already have an account? <a routerLink="/login">Login here</a></p>
+    </div>
+  </div> 
+
+</div>
+
+    -->
+
+    <p-toast></p-toast>
+    <div class="parent">
+      <div class="register-container">
+        <h2>Register</h2>
+        <form (ngSubmit)="onRegister(registerForm)" #registerForm="ngForm">
+          
+
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" ngModel required #firstName="ngModel">
+              <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)" class="error">
+                First name is required.
+              </div>
+            </div>
+    
+            <div class="form-group">
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" ngModel required #lastName="ngModel">
+              <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)" class="error">
+                Last name is required.
+              </div>
+            </div>
+          </div>
+    
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" ngModel required #email="ngModel">
+              <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">
+                Email is required.
+              </div>
+            </div>
+    
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" ngModel required #password="ngModel">
+              <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error">
+                Password is required.
+              </div>
+            </div>
+          </div>
+    
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="confirmpassword">Confirm Password:</label>
+              <input type="password" id="confirmpassword" name="confirmpassword" ngModel required #confirmpassword="ngModel">
+              <div *ngIf="confirmpassword.invalid && (confirmpassword.dirty || confirmpassword.touched)" class="error">
+                Confirm Password is required.
+              </div>
+              <div *ngIf="password.value !== confirmpassword.value && (confirmpassword.dirty || confirmpassword.touched)" class="error">
+                Passwords must match.
+              </div>
+            </div>
+          </div>
+    
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="dept">Department:</label>
+              <input type="text" id="dept" name="dept" ngModel required #dept="ngModel">
+              <div *ngIf="dept.invalid && (dept.dirty || dept.touched)" class="error">
+                Department is required.
+              </div>
+            </div>
+    
+            <div class="form-group">
+              <label for="position">Position:</label>
+              <input type="text" id="position" name="position" ngModel required #position="ngModel">
+              <div *ngIf="position.invalid && (position.dirty || position.touched)" class="error">
+                Position is required.
+              </div>
+            </div>
+          </div>
+    
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="hiredate">Hire Date:</label>
+              <input type="date" id="hiredate" name="hiredate" ngModel required #hiredate="ngModel">
+              <div *ngIf="hiredate.invalid && (hiredate.dirty || hiredate.touched)" class="error">
+                Hire Date is required.
+              </div>
+            </div>
+    
+            <div class="form-group">
+              <label for="birthdate">Birth Date:</label>
+              <input type="date" id="birthdate" name="birthdate" ngModel required #birthdate="ngModel">
+              <div *ngIf="birthdate.invalid && (birthdate.dirty || birthdate.touched)" class="error">
+                Birth Date is required.
+              </div>
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" ngModel required #address="ngModel"></textarea>
+            <div *ngIf="address.invalid && (address.dirty || address.touched)" class="error">
+              Address is required.
+            </div>
+          </div>
+    
+          <button type="submit" [disabled]="registerForm.invalid">Register</button>
+        </form>
+    
+        <div class="login-link">
+          <p>Already have an account? <a routerLink="/login">Login here</a></p>
+        </div>
+      </div>
+    </div>
+    
